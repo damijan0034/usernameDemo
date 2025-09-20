@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+
+    display: none;
+
+    
+}
+
+
+
+#input-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+
+    text-align: center;
+
+
+}
+
+input{
+
+    outline: 1px solid black;
+    width: 220px;
+    height: 30px;
+
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+
+    font-family: 'Poppins', sans-serif;
+}
+input:focus{
+    outline: 1px solid black;
+}
+
+#myButton{
+
+    width: 220px;
+    height: 30px;
+
+    border-radius: 30px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: white;
+    /* background-color: black; */
+    background-color: hsl(273, 100%, 50%);
+
+    transform: translateY(-0px);
+    transition: all 0.3s ease ;
+
+}
+
+#myButton:hover{
+    transform: translateY(-5px);
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.username-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 330px;
+    background-color: inherit;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px hsl(0, 0%, 70%);
+    border-radius: 20px;
+
+    
+  
+
+}
+
+.username-dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.b1t-one{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    /* border: 1px solid; */
+   
+
+
+
+
+}
+
+.opis{
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    font-size: 14px;
+
+  font-family: 'Poppins', sans-serif;
+    /* border: 1px solid; */
+
+
+
+    
+
+
+}
+
+.b1t-one{
+
+    margin: 0;
+}
+
+
+#error{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    color: hsl(273, 100%, 50%);
+    margin: 0;
+    padding: 0;
+
+
+    display: none;
+}
+
+.b1t-but-one{
+    color: hsl(273, 100%, 50%) ;
+}
+
+.name{
+    color: hsl(273, 100%, 50%);
+}
+
+
+@media screen and (max-width: 360px) {
+
+
+    .username-dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    transform: scale(0.8);
+}
+
+}
