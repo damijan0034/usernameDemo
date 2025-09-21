@@ -92,15 +92,32 @@ inputName.addEventListener('keydown', function(event) {
   }
 })
 
+// Original
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   const storedName = localStorage.getItem('ime')
+//   if (storedName) {
+
+//     usernamePage.style.display = 'none'
+//     greetingPage.style.display = 'flex'
+//     pozdrav()
+
+//   }
+// })
+
+// Original
+
+
 window.addEventListener('DOMContentLoaded', () => {
   const storedName = localStorage.getItem('ime')
   if (storedName) {
-
-    usernamePage.style.display = 'none'
     greetingPage.style.display = 'flex'
     pozdrav()
-
+  } else {
+    usernamePage.style.display = 'flex'
   }
 })
 
+
 // localStorage.clear()
+
