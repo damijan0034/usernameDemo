@@ -183,6 +183,13 @@ input:focus{
 }
 
 
+
+.username-dir,
+.heading {
+  display: none;
+}
+
+
 @media screen and (max-width: 360px) {
 
 
@@ -197,3 +204,4 @@ input:focus{
 }
 
 }
+
