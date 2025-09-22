@@ -112,9 +112,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const storedName = localStorage.getItem('ime')
   if (storedName) {
     greetingPage.style.display = 'flex'
+    usernamePage.style.display = 'none'
     pozdrav()
   } else {
     usernamePage.style.display = 'flex'
+    greetingPage.style.display = 'none'
   }
 })
 
